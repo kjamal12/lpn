@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - LaunchPoint Network</title>
+
+  <!-- CSS -->
+  css/styles.css
+
+  <!-- ICONS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- JS -->
+  <script src="js/script.js" defer></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<!-- NAVBAR -->
+<nav class="main-nav">
+
+  <div class="nav-container">
+
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo2.png" alt="LaunchPoint Logo">
+    </a>
+
+        <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+      <li><a href="comingsoon.html">Podcast</a></li>
+      <li><a href="campus.html">Event</a></li>
+      <li><a href="follow.html">Follow</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="volunteer.html" class="nav-cta">Join the Network</a>
+
+  </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+<section class="about-hero">
+
+
+  <p class="about-big-text">
+    We are building a <span class="highlight">connected network</span>
+    to launch the next generation into
+    <span class="highlight">meaningful careers</span>.
+  </p>
+
+</section>
+
+
+<!-- ========================
+     MISSION + UNIQUE
+========================= -->
+<section class="mission-section">
+
+  <div class="mission-block">
+    <h2>🚀 Our Mission</h2>
+
+    <p class="mission-highlight">
+      We are building the next generation of leaders.
+    </p>
+
+    <p>
+      LaunchPoint Network exists to activate, organize, and mobilize young people—
+      turning ambition into opportunity. We build powerful student networks that
+      unlock real career pathways, equipping students with the skills, relationships,
+      and access needed to succeed.
+    </p>
+
+    <div class="mission-tags">
+      <span>Leadership</span>
+      <span>Connection</span>
+      <span>Opportunity</span>
+    </div>
+  </div>
+
+
+  <div class="mission-block">
+
+    <h2>⚡ What Makes Us Unique</h2>
+
+    <p class="mission-highlight">
+      We don’t just connect students—we move them forward.
+    </p>
+
+    <p>
+      LaunchPoint taps into youth culture and social media to bring students
+      into real campus communities. By transforming digital attention into
+      in-person connection, we create environments where relationships are built,
+      networks grow, and opportunities become real.
+    </p>
+
+    <div class="mission-tags">
+      <span>Real Networks</span>
+      <span>Campus Impact</span>
+      <span>Career Pathways</span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================
+     Pathway Section (TOGGLE SYSTEM)
+========================= -->
+
+<section class="path-section">
+  <h2>Our Pathway</h2>
+
+  <div class="path-flow">
+
+    <div class="path-box active" onclick="showPath('pre', this)">
+      Pre‑University
+    </div>
+
+    <div class="arrow">→</div>
+
+    <div class="path-box" onclick="showPath('uni', this)">
+      University
+    </div>
+
+    <div class="arrow">→</div>
+
+    <div class="path-box" onclick="showPath('post', this)">
+      Post‑University
+    </div>
+
+  </div>
+
+  <!-- DYNAMIC CONTENT -->
+  <div class="path-content">
+
+    <h3 id="path-title">Pre‑University</h3>
+
+    <p id="path-text">
+      Early exposure to leadership, career awareness, and skill-building helps
+      young people enter university with direction and confidence.
+    </p>
+
+    <ul id="path-programs">
+      <li>High school outreach</li>
+      <li>Intro leadership workshops</li>
+      <li>Career awareness sessions</li>
+    </ul>
+
+  </div>
+
+     <!--STATISTICS Loniness Section -->
+
+</section>
+
+<section class="lonely-section">
+
+  <div class="lonely-inner">
+
+    <!-- HEADER -->
+    <div class="lonely-text">
+      <h2>The Growing Crisis of Disconnection</h2>
+
+      <p>
+        Across every age group, young people are experiencing rising levels
+        of isolation and loneliness. As traditional community structures weaken,
+        fewer individuals have access to meaningful networks, support systems,
+        and shared experiences.
+      </p>
+    </div>
+
+    <!-- GRAPH CARD -->
+    <div class="lonely-card">
+      <img src="images/loneliness.png" alt="Loneliness graph">
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ================= FOUNDERS ================= -->
+<section class="founders-section">
+
+  <h2>Founding Team</h2>
+
+  <div class="team-container">
+
+    <!-- LEFT: NAV -->
+    <div class="team-list">
+
+      <div class="team-card" onclick="showMember('danica', this)">
+             <img src="images/danica.png" alt="Danica Ras">
+        <h3>Danica Ras</h3>
+      </div>
+
+      <div class="team-card" onclick="showMember('khalil', this)">
+        <img src="images/khalil.png" alt="Khalil Jamal">
+        <h3>Khalil Jamal</h3>
+      </div>
+
+      <div class="team-card" onclick="showMember('conner', this)">
+              <img src="images/conner.png" alt="Conner Andrews">
+        <h3>Conner Andrews</h3>
+      </div>
+
+    </div>
+
+    <!-- RIGHT: CONTENT PANEL -->
+    <div class="team-display">
+
+      <div class="panel" id="panel">
+
+        <h2 id="name">Our Founders</h2>
+<p id="role">Leadership Team</p>
+
+<p id="bio">
+  The founding team of LaunchPoint Network brings together experience in
+  leadership, campus organizing, and youth engagement. Together, they are
+  building a connected system that helps students access real opportunities,
+  develop meaningful relationships, and navigate clear pathways into their careers. </p>
+        <a id="email" href="mailto:danica@launchpointnet.ca" class="email-icon">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================
+     TEAM SECTION (CARD GROUP)
+========================= -->
+<section>
+
+  <h2 style="text-align:center;">Our Team</h2>
+
+  <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap;">
+
+   <div class="card" onclick="showTeam('media', this)">
+  <h3>Media Team</h3>
+  <p>Content, podcasts, social storytelling</p>
+</div>
+
+<div class="card" onclick="showTeam('campus', this)">
+  <h3>Campus Team</h3>
+  <p>Community building and student leadership</p>
+</div>
+
+  </div>
+
+</section>
+
+<!-- ========================
+     OUR TEAM (TOGGLE SYSTEM)
+========================= -->
+<section class="team-section">
+
+  <!-- CAMPUS TEAM -->
+  <div id="campus-team" class="team-grid active">
+
+    <div class="team-card">
+      <h3>Manager, Campus Organization</h3>
+      <p class="role">Operations</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Alon Sadiv Shavit</h3>
+      <p class="role">Regional Organizer for Huron, Perth, Waterloo and Wellington</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Laurier Campus Lead</h3>
+      <p class="role">Campus Leadership</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Queen’s Campus Lead</h3>
+      <p class="role">Campus Leadership</p>
+    </div>
+
+    <div class="team-card">
+      <h3>UofT Campus Lead</h3>
+      <p class="role">Campus Leadership</p>
+    </div>
+
+  </div>
+
+  <!-- MEDIA TEAM -->
+  <div id="media-team" class="team-grid">
+
+    <div class="team-card">
+      <h3>Julie Burke</h3>
+      <p class="role">Chief Digital Media and Marketing Officer</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Sophia Stozhok</h3>
+      <p class="role">Social Media Manager</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Editor</h3>
+      <p class="role">Video & Content</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Technical Support</h3>
+      <p class="role">Production</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Mitchell Day</h3>
+      <p class="role">Host of Say it Anyways Podcast</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Podcast Producer</h3>
+      <p class="role">Production</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================
+     CTA
+========================= -->
+<section class="cta">
+  <a href="volunteer.html">Join the Team</a>
+  <a href="donate.html">Support Our Work</a>
+</section>
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+</body>
+</html>

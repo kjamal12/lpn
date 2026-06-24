@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Volunteer - LaunchPoint Network</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- JS -->
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="main-nav">
+
+  <div class="nav-container">
+
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo2.png" alt="LaunchPoint Logo">
+    </a>
+
+     <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="comingsoon.html">Podcast</a></li>
+      <li><a href="campus.html">Event</a></li>
+      <li><a href="follow.html">Follow</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="volunteer.html" class="nav-cta">Join the Network</a>
+
+  </div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="volunteer-hero">
+
+  <div class="volunteer-inner">
+
+    <!-- LEFT SIDE -->
+    <div class="volunteer-text">
+      <p class="hero-label">JOIN LAUNCHPOINT</p>
+
+      <h1>Build the Next Generation of Leaders</h1>
+
+      <p>
+        Gain real experience, expand your network, and work on projects
+        that create meaningful impact.
+      </p>
+    </div>
+
+   <!-- RIGHT SIDE -->
+<div class="join-options">
+
+  <!-- Volunteer -->
+  <button
+    type="button"
+    onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf8pkxllLnCFOcLtl78llBx5UoJhQMLV-dl0wdEtifpAibjcw/viewform','_blank')">
+    Join by Volunteering
+  </button>
+
+  <!-- Participate (opens drawer) -->
+  <button
+    type="button"
+    onclick="toggleDrawer('participate')">
+    Join by Participating
+  </button>
+
+  <!-- Sponsor -->
+  <button
+    type="button"
+    onclick="window.open('https://forms.gle/zYgabDcarwyN7Wsa8','_blank')">
+    Sponsor / Partner
+  </button>
+
+  <!-- DRAWER (hidden/expandable panel) -->
+  <div id="participate-drawer" class="drawer">
+
+    <form
+      id="participate-form"
+      onsubmit="sendEmail(event)">
+
+      <h3>Participant Form</h3>
+
+      <input type="text" name="firstName" placeholder="First Name" required>
+      <input type="text" name="lastName" placeholder="Last Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number">
+      <input type="text" name="postalCode" placeholder="Postal Code">
+
+      <select name="lifeStage" required>
+        <option value="">Select Life Stage</option>
+        <option>Pre-postsecondary</option>
+        <option>Currently in Post-secondary</option>
+        <option>Graduated / Out of Post-secondary</option>
+      </select>
+
+      <select name="interests" multiple size="7">
+        <option>Job Fairs</option>
+        <option>Resume & Interview Training</option>
+        <option>Meeting New People</option>
+        <option>Learning New Skills</option>
+        <option>Networking</option>
+        <option>Watching Social Media Videos</option>
+        <option>Not Sure Yet</option>
+      </select>
+
+      <button type="submit">
+        Submit
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+<!-- END RIGHT SIDE -->
+
+</section>
+
+
+<!-- ================= WHY ================= -->
+<section class="why-section">
+
+  <h2>Why Volunteer With Us</h2>
+
+  <div class="why-grid">
+
+    <div class="why-card">
+      <i class="fa-solid fa-briefcase"></i>
+      <h3>Real Experience</h3>
+      <p>Work on projects that translate directly to career skills.</p>
+    </div>
+
+    <div class="why-card">
+      <i class="fa-solid fa-people-group"></i>
+      <h3>Strong Network</h3>
+      <p>Connect with driven, like-minded young leaders.</p>
+    </div>
+
+    <div class="why-card">
+      <i class="fa-solid fa-chart-line"></i>
+      <h3>Leadership Growth</h3>
+      <p>Build confidence, initiative, and impactful leadership skills.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+  <a href="about.html">Learn More</a>
+  <a href="donate.html">Support the Mission</a>
+</section>
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+
+
+</body>
+</html>

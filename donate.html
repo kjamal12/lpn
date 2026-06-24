@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>Donate - LaunchPoint Network</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="main-nav">
+
+  <div class="nav-container">
+
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo2.png" alt="LaunchPoint Logo">
+    </a>
+
+        <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="comingsoon.html">Podcast</a></li>
+      <li><a href="campus.html">Event</a></li>
+      <li><a href="follow.html">Follow</a></li>
+      <li><a href="donate.html" class="active">Donate</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="volunteer.html" class="nav-cta">Join the Network</a>
+
+  </div>
+
+</nav>
+
+<!-- ✅ PAGE HEADER -->
+<section style="padding: 120px 20px 40px; text-align: center;">
+  <h1 style="font-size: 42px;">Support the Mission</h1>
+  <p style="opacity: 0.8;">Help us build pathways for the next generation</p>
+</section>
+
+<!-- ✅ MAIN LAYOUT -->
+<section class="donate-section">
+
+  <div class="donate-container">
+
+    <!-- LEFT SIDE -->
+    <div class="donate-left">
+
+      <h2>Support the Mission</h2>
+      <p class="donate-sub">
+        Help us build pathways for the next generation.
+      </p>
+
+      <div class="donate-cards">
+     
+<div class="info-card">
+
+  <h3 class="card-title">Why it matters</h3>
+
+  <p class="card-text">
+    LaunchPoint builds systems that connect students to real opportunities.
+            Your support helps expand programs and reach more campuses.
+  </p>
+</div>
+
+
+        <div class="info-card">
+
+  <h3 class="card-title">Your impact</h3>
+
+  <p class="card-text">
+     Every contribution funds events, media production, and career pathways
+            that help students gain real-world experience.
+  </p>
+</div>
+
+        <div class="info-card">
+          <h3 class="card-title">What makes us different</h3>
+          <p class="card-text">
+            We turn digital engagement into real-world outcomes—bridging media,
+            community, and career opportunity.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+   <!-- RIGHT SIDE (CLEAN STRIPE-READY CARD) -->
+<div class="donate-card">
+
+  <h3>Make a Donation</h3>
+
+  <p class="donate-desc">
+    Support LaunchPoint’s mission to build pathways for young people.
+  </p>
+
+  <!-- PRESET AMOUNTS -->
+  <div class="donate-amounts">
+    <button>$10</button>
+    <button>$25</button>
+    <button>$50</button>
+    <button>$100</button>
+  </div>
+
+  <!-- CUSTOM AMOUNT -->
+  <input type="number" placeholder="Enter custom amount ($)">
+
+  <!-- STRIPE BUTTON (FUTURE LINK) -->
+  <a href="#" class="donate-link-btn">
+    Donate Securely
+  </a>
+
+  <!-- TRUST TEXT -->
+  <p class="donate-note">
+    Secure payments powered by Stripe (coming soon)
+  </p>
+
+  <!-- IMPACT MESSAGE -->
+  <div class="donate-impact">
+    <p>
+      Every contribution supports programs, events, and career pathways for students.
+    </p>
+  </div>
+
+</div>
+</section>
+
+<!-- ✅ CTA -->
+<section class="cta">
+  <a href="volunteer.html">Get Involved</a>
+  <a href="about.html">Learn More</a>
+</section>
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+
+</body>
+</html>
+

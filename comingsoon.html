@@ -1,0 +1,89 @@
+<!DOCTYPE html><en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Podcast - LaunchPoint Network</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="main-nav">
+  <div class="nav-container">
+
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo2.png" alt="LaunchPoint Logo">
+    </a>
+
+      <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="comingsoon.html" class="active">Podcast</a></li>
+      <li><a href="campus.html">Event</a></li>
+      <li><a href="follow.html">Follow</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="volunteer.html" class="nav-cta">Join the Network</a>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="podcast-hero">
+
+  <p class="section-label">LAUNCHPOINT PODCAST</p>
+
+  <h1>Conversations That Move You Forward</h1>
+
+  <p class="podcast-sub">
+    Real conversations with students, creators, and professionals building their paths — and shaping the future.
+  </p>
+
+</section>
+
+<div class="img-card">
+  <img src="images/1.png" alt="Image">
+</div>
+
+
+
+<!-- COMING SOON -->
+<section class="coming-soon">
+
+  <h2>🎙 Podcast Launching Soon</h2>
+
+  <p>
+    We’re currently building our first series of conversations featuring
+    students, leaders, and professionals across Canada.
+  </p>
+
+  <p>
+    Stay tuned — our first episodes are coming soon.
+  </p>
+
+  <div class="cta">
+    <a href="follow.html">Follow for Updates</a>
+    <a href="volunteer.html">Get Involved</a>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>Follow - LaunchPoint Network</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="main-nav">
+  <div class="nav-container">
+
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo2.png">
+    </a>
+
+     <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="comingsoon.html">Podcast</a></li>
+      <li><a href="campus.html">Event</a></li>
+      <li><a href="follow.html" class="active">Follow</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+
+    <a href="volunteer.html" class="nav-cta">Join the Network</a>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="follow-hero">
+  <h1>Stay Connected</h1>
+  <p>Join the conversation across platforms and be part of the movement.</p>
+</section>
+
+<!-- SOCIAL GRID -->
+<section class="follow-section">
+    
+    <!-- YOUTUBE -->
+    <a href="https://www.youtube.com/@LaunchPointNetwork2" target="_blank" class="follow-card youtube">
+    <i class="fa-brands fa-youtube"></i>
+      <h3>YouTube</h3>
+      <p>Full podcast episodes and video content.</p>
+    </a>
+
+    <!-- X -->
+    <a href="https://x.com/Launchpointnet" target="_blank" class="follow-card x">
+      <i class="fa-brands fa-x-twitter"></i>
+      <h3>X</h3>
+      <p>Real-time thoughts and discussion.</p>
+    </a>
+
+    <!-- TIKTOK -->
+    <a href="https://www.tiktok.com/@launchpointnetwork" target="_blank" class="follow-card tiktok">
+      <i class="fa-brands fa-tiktok"></i>
+      <h3>TikTok</h3>
+      <p>Short-form content and highlights.</p>
+    </a>
+
+    <!-- INSTAGRAM -->
+    <a href="https://www.instagram.com/launchpointnet/" target="_blank" class="follow-card instagram">
+      <i class="fa-brands fa-instagram"></i>
+      <h3>Instagram</h3>
+      <p>Updates, clips, and student stories.</p>
+    </a>
+
+    <!-- AFTER DARK -->
+    <a href="https://www.instagram.com/launchpointafterdark/" target="_blank" class="follow-card afterdark">
+      <i class="fa-solid fa-moon"></i>
+      <h3>After Dark</h3>
+      <p>Unfiltered conversations and behind-the-scenes.</p>
+    </a>
+
+  </div>
+
+</section>
+
+  <div class="follow-container">
+
+    
+
+<!-- CTA -->
+<section class="cta">
+  <a href="volunteer.html">Get Involved</a>
+  <a href="about.html">Learn More</a>
+</section>
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+</body>
+</html>

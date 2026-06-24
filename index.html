@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="</h1><html lang="en">
+      <p>Join the conversation.</p>
+    </div>
+
+<section class="home-hero">
+
+  <div class="hero-content">
+
+    <!-- LEFT SIDE (LIKE YOUR REFERENCE) -->
+    <div class="hero-left">
+
+      <p class="hero-label">LAUNCHPOINT NETWORK</p>
+
+      <h1>
+        BUILDING THE<br>
+        NEXT GENERATION<br>
+        OF LEADERS
+      </h1>
+
+      <p class="hero-text">
+        Empowering young Canadians through campus organizing,
+        civic engagement, leadership training, and real-world opportunity.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="volunteer.html" class="btn-primary">Join the Movement</a>
+        <a href="about.html" class="btn-secondary">Learn More</a>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE (FORM) -->
+    <div class="hero-form">
+
+      <h3>Join Now</h3>
+
+      <form>
+
+        <div class="form-row">
+          <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Last Name" required>
+        </div>
+
+        <div class="form-row">
+          <input type="email" placeholder="Email" required>
+          <input type="tel" placeholder="Phone">
+        </div>
+
+        <div class="form-row">
+          <select required>
+            <option value="">Age</option>
+            <option>Under 18</option>
+            <option>18–25</option>
+            <option>25+</option>
+          </select>
+
+          <select required>
+            <option value="">Role</option>
+            <option>University Student</option>
+            <option>High School Student</option>
+            <option>Not a Student</option>
+          </select>
+        </div>
+
+        <label class="terms">
+          <input type="checkbox" required>
+          I agree to the 
+          <a href="files/SignUpPrivacy.pdf" target="_blank">Terms and Conditions</a>
+        </label>
+
+        <button type="submit">Join the Network</button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+<section class="stats">
+
+  <h2>A generation is being left behind.</h2>
+
+  <div class="stats-grid">
+
+    <div class="stat">
+      <h3>17.7%</h3>
+      <p>Youth Unemployment</p>
+    </div>
+
+    <div class="stat">
+      <h3>1 in 5</h3>
+      <p>Young Ontarians can't find work</p>
+    </div>
+
+    <div class="stat">
+      <h3>26.6%</h3>
+      <p>Long-Term Unemployment</p>
+    </div>
+
+    <div class="stat">
+      <h3>1,000s</h3>
+      <p>Graduates without a pathway</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= MISSION ================= -->
+<section class="mission">
+
+  <div class="mission-inner">
+
+    <h2>Young Canadians need more than promises</h2>
+
+    <p>
+      LaunchPoint Network exists to give young people access to real opportunities,
+      strong networks, and clear pathways into careers.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+<section class="cta-grid">
+
+  <a href="volunteer.html" class="cta-card">Volunteer</a>
+  <a href="contact.html" class="cta-card">Partner</a>
+  <a href="donate.html" class="cta-card">Donate</a>
+  <a href="about.html" class="cta-card">Learn More</a>
+
+</section>
+
+
+<!-- ================= FOOTER (UNCHANGED) ================= -->
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+</body>
+</html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LaunchPoint Network</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- JS -->
+   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR (UNCHANGED) ================= -->
+<nav class="main-nav">
+  <div class="nav-container">
+
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo2.png" alt="LaunchPoint Logo">
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="comingsoon.html">Podcast</a></li>
+      <li><a href="campus.html">Event</a></li>
+      <li><a href="follow.html">Follow</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="volunteer.html" class="nav-cta">Join the Network</a>
+
+  </div>
+</nav>
+
+

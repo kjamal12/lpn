@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Podcast - LaunchPoint Network</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="main-nav">
+
+  <div class="nav-container">
+
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo2.png" alt="LaunchPoint Logo">
+    </a>
+
+        <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="podcast.html" class="active">Podcast</a></li>
+      <li><a href="campus.html">Event</a></li>
+      <li><a href="follow.html">Follow</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="volunteer.html" class="nav-cta">Join the Network</a>
+
+  </div>
+
+</nav>
+
+<!-- ✅ PAGE TITLE -->
+<section style="padding: 120px 20px 40px; text-align: center;">
+  <h1 style="font-size: 42px;">LaunchPoint Podcasts</h1>
+  <p style="opacity: 0.8;">Explore conversations shaping the next generation</p>
+</section>
+
+<!-- ✅ PODCAST GRID -->
+<section style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 20px 40px;">
+
+  <!-- Podcast 1 -->
+  <div class="card">
+    <img src="images/logo.png" alt="Podcast 1" style="width:100%; border-radius:6px;">
+    <h3 style="margin-top: 10px;">Podcast Series 1</h3>
+    <p style="font-size: 14px; opacity:0.8;">Conversations on youth, policy, and opportunity.</p>
+    <a href="podcast1.html" style="display:block; margin-top:10px; color: var(--red);">View Podcast →</a>
+  </div>
+
+  <!-- Podcast 2 -->
+  <div class="card">
+    <img src="images/logo.png" alt="Podcast 2" style="width:100%; border-radius:6px;">
+    <h3 style="margin-top: 10px;">Podcast Series 2</h3>
+    <p style="font-size: 14px; opacity:0.8;">Campus voices and student leadership stories.</p>
+    <a href="podcast2.html" style="display:block; margin-top:10px; color: var(--red);">View Podcast →</a>
+  </div>
+
+  <!-- Podcast 3 -->
+  <div class="card">
+    <img src="images/logo.png" alt="Podcast 3" style="width:100%; border-radius:6px;">
+    <h3 style="margin-top: 10px;">Podcast Series 3</h3>
+    <p style="font-size: 14px; opacity:0.8;">Career pathways and real-world insights.</p>
+    <a href="podcast3.html" style="display:block; margin-top:10px; color: var(--red);">View Podcast →</a>
+  </div>
+
+</section>
+
+<!-- ✅ CTA -->
+<section class="cta">
+  <a href="follow.html">Watch & Follow</a>
+  <a href="volunteer.html">Get Involved</a>
+</section>
+
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+
+
+</body>
+</html>
