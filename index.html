@@ -31,51 +31,80 @@
     </div>
 
     <!-- RIGHT SIDE (FORM) -->
-    <div class="hero-form">
+<div class="hero-form">
 
-      <h3>Join Now</h3>
+  <h3>Join Now</h3>
 
-      <form>
+  <form id="joinForm" onsubmit="sendEmail(this, event)">
 
-        <div class="form-row">
-          <input type="text" placeholder="First Name" required>
-          <input type="text" placeholder="Last Name" required>
-        </div>
+    <div class="form-row">
+      <input
+        type="text"
+        name="first_name"
+        placeholder="First Name"
+        required
+      >
 
-        <div class="form-row">
-          <input type="email" placeholder="Email" required>
-          <input type="tel" placeholder="Phone">
-        </div>
-
-        <div class="form-row">
-          <select required>
-            <option value="">Age</option>
-            <option>Under 18</option>
-            <option>18–25</option>
-            <option>25+</option>
-          </select>
-
-          <select required>
-            <option value="">Role</option>
-            <option>University Student</option>
-            <option>High School Student</option>
-            <option>Not a Student</option>
-          </select>
-        </div>
-
-        <label class="terms">
-          <input type="checkbox" required>
-          I agree to the 
-          <a href="files/SignUpPrivacy.pdf" target="_blank">Terms and Conditions</a>
-        </label>
-
-        <button type="submit">Join the Network</button>
-
-      </form>
-
+      <input
+        type="text"
+        name="last_name"
+        placeholder="Last Name"
+        required
+      >
     </div>
 
-  </div>
+    <div class="form-row">
+      <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required
+      >
+
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Phone Number"
+      >
+    </div>
+
+    <div class="form-row">
+      <select name="age" required>
+        <option value="">Age</option>
+        <option value="Under 18">Under 18</option>
+        <option value="18–25">18–25</option>
+        <option value="25+">25+</option>
+      </select>
+
+      <select name="role" required>
+        <option value="">Role</option>
+        <option value="University Student">University Student</option>
+        <option value="High School Student">High School Student</option>
+        <option value="Not a Student">Not a Student</option>
+      </select>
+    </div>
+
+    <label class="terms">
+      <input
+        type="checkbox"
+        name="terms"
+        value="Accepted"
+        required
+      >
+
+      I agree to the
+      <a href="files/SignUpPrivacy.pdf" target="_blank">
+        Terms and Conditions
+      </a>
+    </label>
+
+    <button type="submit">
+      Join the Network
+    </button>
+
+  </form>
+
+</div>
 
 </section>
 

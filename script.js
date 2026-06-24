@@ -365,3 +365,54 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+/* ==========================================
+   EMAILJS INITIALIZATION
+========================================== */
+
+(function () {
+    emailjs.init({
+        publicKey: "3kWy16lx589aoox8p"
+    });
+})();
+
+/* ==========================================
+   JOIN FORM SUBMISSION
+========================================== */
+
+function sendEmail(form, event) {
+
+    event.preventDefault();
+
+    const submitButton = form.querySelector("button[type='submit']");
+    const originalText = submitButton.innerHTML;
+
+    submitButton.disabled = true;
+    submitButton.innerHTML = "Submitting...";
+
+    emailjs.sendForm(
+        "service_lnm58ed",
+        "template_q935p51",
+        form
+    )
+    .then(function () {
+
+        alert("✅ Thank you for joining LaunchPoint Network! We will be in touch soon.");
+
+        form.reset();
+
+        submitButton.disabled = false;
+        submitButton.innerHTML = originalText;
+
+    })
+    .catch(function (error) {
+
+        console.error("EmailJS Error:", error);
+
+        alert("This form is not working. Please email us at info@launchpointnet.ca");
+
+        submitButton.disabled = false;
+        submitButton.innerHTML = originalText;
+
+    });
+
+}
